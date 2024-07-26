@@ -1,4 +1,4 @@
-a Password Generator with different settings using JavaScript 
+Password Generator with different settings using JavaScript 
 
 use this link https://sohaibdm.github.io/Password-Generator/
 
