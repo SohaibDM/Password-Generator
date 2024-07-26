@@ -1,0 +1,171 @@
+body{
+    background-image: url(PassGen.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#settingsIcon{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    
+}
+
+.copyIcon{
+    position: absolute;
+    top: 330px;
+    right: 160px;
+    display: none;
+    
+}
+#copybtn{
+    cursor: pointer;
+}
+#container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(145deg, #131212, #424040);
+    box-shadow: 30px 30px 50px #111, -5px -5px 15px #3a453f;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    width: 350px;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.buttons{
+    background-color: #039445;
+    height: 70px;
+    width: 100px;
+    font-size: larger;
+    border-radius: 10px;
+    box-shadow: 30px 30px 50px #111, -5px -5px 15px #3a453f;
+    cursor: pointer;
+}
+.buttons:hover{
+    background-color: #05ab50;
+    height: 80px;
+    width: 110px;
+}
+.buttons:active {
+    background-color: #06c05a;
+}
+
+
+#settings{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: linear-gradient(145deg, #131212, #424040);
+    box-shadow: 30px 30px 50px #111, -5px -5px 15px #3a453f;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    height: 400px;
+    display: block;
+    font-size: larger;
+
+}
+
+
+#settingsIcon:hover {
+    height: 55px;
+    width: 55px;
+}
+
+
+
+#copybtn:hover {
+    height: 45px;
+    width: 45px;
+}
+
+
+
+#length{
+    color: black;
+}
+
+label,
+input {
+    display: block;
+    margin: 10px 0;
+    color: white;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.toggle {
+    background-color: #4c4b4b;
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 10px;
+}
+
+.toggle::before {
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    top: 1px;
+    left: 1px;
+    transition: all 0.3s;
+} 
+
+input[type="checkbox"]:checked + .toggle{
+    background-color: #039445;
+}
+
+input[type="checkbox"]:checked+.toggle::before {
+    transform: translateX(30px);
+    
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+#length {
+    width: 60px;
+    height: 25px;
+}
+
+#password {
+    color: white;
+    background: transparent;
+    border: none;
+    text-align: center;
+    font-size: larger;
+}
+
+#copyMessage{
+    color: #979797;
+    background: transparent;
+    border: none;
+    text-align: center;
+    font-size: larger;
+}
