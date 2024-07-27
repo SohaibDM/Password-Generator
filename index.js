@@ -22,6 +22,8 @@ function generatePassword(length, includeLowercase, includeUppercase, includeNum
     allowedChars += includeNumbers ? numberChars : "";
     allowedChars += includeSymbols ? symbolChars : "";
 
+    
+
     if (length > 20) {
         message = "password cant be more than 20 chars";
       document.getElementById("password").textContent = message;
@@ -43,7 +45,7 @@ function generatePassword(length, includeLowercase, includeUppercase, includeNum
     
     
     if (message === ""){
-        document.getElementById("password").value = password;
+        document.getElementById("password").textContent = password;
         document.getElementById("copybtn").style.display = "block";
     }
     
@@ -82,7 +84,7 @@ function handleClick(){
 
 function copyText() {
   const passwordDisplay = document.getElementById("password");
-  const password = passwordDisplay.value;
+  const password = passwordDisplay.textContent;
 
   if (password) {
     navigator.clipboard
