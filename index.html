@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PasswordGen</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icons/password.png" type="image/svg+xml">
 </head>
 <body>
     <div id="container">
-        <img id ="settingsIcon" src="icons/settings.svg" height="50" width="50" onclick="show()">
+        <img id ="settingsIcon" src="icons/settings.svg" height="50" width="50">
         <h1 id="h1">Password Generator</h1><br>
-        <button id="generatebtn" class="buttons" onclick="generate()">Generate</button><br>
+        <button id="generatebtn" class="buttons" >Generate</button><br>
         <div id="passDiv">
             <h3 id="password"></h3>
-            <img class="copyIcon" id="copybtn" src="icons/copy.svg" height="40" width="40" onclick="copyText()">
+            <img class="copyIcon" id="copybtn" src="icons/copy.svg" height="40" width="40">
             <img class="copyIcon" id="copied" src="icons/clipboard-check.svg" height="35" width="35">
             <input type="text" id="copyMessage" readonly>
         </div>
@@ -45,7 +46,7 @@
             <input type="checkbox" id="symbols">
             <label for="symbols" class="toggle"></label>
         </div>
-        <button id="donebtn" class="buttons" onclick="handleClick()">Done</button>
+        <button id="donebtn" class="buttons">Done</button>
     </div>
     <script src="index.js"></script>
 </body>

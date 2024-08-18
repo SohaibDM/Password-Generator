@@ -1,4 +1,4 @@
-body{
+body {
     background-image: url(icons/PassGen.webp);
     background-position: center;
     background-repeat: no-repeat;
@@ -10,25 +10,27 @@ body{
     align-items: center;
     height: 100vh;
 }
-#settingsIcon{
+
+#settingsIcon {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
-    
 }
 
-.copyIcon{
+.copyIcon {
     position: absolute;
     top: 330px;
     right: 160px;
     display: none;
-    
 }
-#copybtn{
+
+#copybtn {
     cursor: pointer;
 }
-#container{
+
+#container,
+#settings {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -39,13 +41,17 @@ body{
     color: white;
     padding: 20px;
     border-radius: 10px;
-    max-width: 80%;
     width: 350px;
     height: 400px;
     box-sizing: border-box;
+    font-size: larger;
 }
 
-.buttons{
+#container {
+    display: none;
+}
+
+.buttons {
     background-color: #039445;
     height: 70px;
     width: 100px;
@@ -54,50 +60,28 @@ body{
     box-shadow: 30px 30px 50px #111, -5px -5px 15px #3a453f;
     cursor: pointer;
 }
-.buttons:hover{
+
+.buttons:hover {
     background-color: #05ab50;
     height: 80px;
     width: 110px;
 }
+
 .buttons:active {
     background-color: #06c05a;
 }
-
-
-#settings{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    background: linear-gradient(145deg, #131212, #424040);
-    box-shadow: 30px 30px 50px #111, -5px -5px 15px #3a453f;
-    padding: 20px;
-    border-radius: 10px;
-    width: 350px;
-    height: 400px;
-    display: block;
-    font-size: larger;
-
-}
-
 
 #settingsIcon:hover {
     height: 55px;
     width: 55px;
 }
 
-
-
 #copybtn:hover {
     height: 45px;
     width: 45px;
 }
 
-
-
-#length{
+#length {
     color: black;
 }
 
@@ -134,18 +118,17 @@ input {
     top: 1px;
     left: 1px;
     transition: all 0.3s;
-} 
+}
 
-input[type="checkbox"]:checked + .toggle{
+input[type="checkbox"]:checked+.toggle {
     background-color: #039445;
 }
 
 input[type="checkbox"]:checked+.toggle::before {
     transform: translateX(30px);
-    
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
     display: none;
 }
 
@@ -162,7 +145,7 @@ input[type="checkbox"]{
     font-size: larger;
 }
 
-#copyMessage{
+#copyMessage {
     color: #979797;
     background: transparent;
     border: none;
